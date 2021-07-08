@@ -5,19 +5,31 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
-        html {
+        html,body {
             box-sizing: border-box;
             font-family: arial, helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+
         }
         img {
             max-width: 100%;
         }
+
         *,*:before,*:after {
             box-sizing: inherit;
         }
 
-        body {
-            margin: 0;
+        nav {
+            height: 10vh;
+        }
+
+        .container{
+            height: 80vh;
+        }
+
+        footer {
+            height: 10vh;
         }
 
         nav, .main-content, .related-links, .ads, footer {
@@ -32,12 +44,12 @@
             }
 
             .main-content {
-                order: 2;
+                order: 1;
                 flex-grow: 3;
             }
 
             .related-links {
-                order: 1;
+                order: 2;
                 flex-grow: 1;
             }
 
@@ -45,11 +57,7 @@
                 order: 3;
                 flex-grow: 0.5;
             }
-
         }
-
-
-
 
     </style>
 </head>
@@ -58,6 +66,7 @@
 <nav>
     navigation
 </nav>
+<main>
 <div class="container">
     <div class="main-content">
         Main Content
@@ -69,6 +78,7 @@
         Ads
     </aside>
 </div>
+</main>
 <footer>
     Footer
 </footer>
